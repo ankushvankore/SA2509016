@@ -18,6 +18,7 @@ public class D07LocateByClassName {
 		searchBox.sendKeys("Why Automation?");
 		searchBox.sendKeys(Keys.ENTER);
 		//Keys --> Perform keyboard actions
+		
 	}
 
 }
