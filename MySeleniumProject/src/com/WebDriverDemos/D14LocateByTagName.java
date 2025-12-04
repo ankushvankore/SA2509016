@@ -18,14 +18,19 @@ public class D14LocateByTagName {
 		List<WebElement>allLinks = driver.findElements(By.tagName("a"));
 		System.out.println("Total Links: " + allLinks.size());
 		
-		/*System.out.println(allLinks.get(0).getText());
-		System.out.println(allLinks.get(1).getText());*/
+		System.out.println(allLinks.get(3).getText());
+		System.out.println(allLinks.get(7).getText());
 		
-		for(int i = 0; i < allLinks.size(); i++)
-			System.out.println(allLinks.get(i).getText());
+		System.out.println("---------- All Links -------------");
+		
+		//for(int i = 0; i < allLinks.size(); i++)
+			//System.out.println(allLinks.get(i).getText());
+		
+		for(WebElement link : allLinks)
+			System.out.println(link.getText());
 				
-		
 		driver.close();
+		
 	}
 
 }
