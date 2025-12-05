@@ -1,0 +1,43 @@
+package com.WebDriverDemos;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class D20Synchronization_ImplicitWait {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		driver.get("https://www.redbus.in/");
+		
+		//From
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[1]/div[1]/div/div/div[1]")).click();
+		driver.findElement(By.id("srcDest")).sendKeys("Kolh");
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div/div/div")).click();
+		
+		//To
+		//driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[2]/div/div/div[1]")).click();
+		driver.findElement(By.id("srcDest")).sendKeys("Ban");
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[2]/div[2]/div[4]/div[1]/div[1]/div/div/div")).click();
+		
+		//Calender Icon
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[3]/div[1]/i")).click();
+		
+		//Select Date
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[3]/div[3]/div[2]/div/ul/li[31]/div/div/span")).click();
+		
+		//Click on Search Bus
+		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/button")).click();
+		
+		//Display the bus
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"42628206\"]/div[2]/div[3]/div/div[1]/div[1]")).getText());
+		
+		driver.close();
+	}
+
+}
