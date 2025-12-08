@@ -19,6 +19,7 @@ public class D22Synchronization_FluentWait {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get("https://omayo.blogspot.com/");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		
 		FluentWait<WebDriver>wait = new FluentWait<WebDriver>(driver);
 		
