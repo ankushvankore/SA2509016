@@ -18,7 +18,6 @@ public class D25HandlingMultipleWindows {
 		driver.get("https://www.naukri.com/");
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		
 		js.executeScript("window.scrollBy(0, 300)", "");
 		
 		driver.findElement(By.xpath("//span[contains(text(), \"Remote\")]")).click();
@@ -36,6 +35,13 @@ public class D25HandlingMultipleWindows {
 		System.out.println("Title: " + driver.getTitle());
 		
 		driver.findElement(By.xpath("//*[@id=\"search-result-container\"]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/div[1]/label/i")).click();
+		
+		Thread.sleep(2000);
+		driver.switchTo().window(win1);
+		
+		driver.findElement(By.linkText("Login")).click();
+		
+		driver.quit();
 	}
 
 }
