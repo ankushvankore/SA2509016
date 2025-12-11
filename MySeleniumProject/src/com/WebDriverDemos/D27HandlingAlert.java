@@ -40,14 +40,14 @@ public class D27HandlingAlert {
 		alt = driver.switchTo().alert();
 		System.out.println(alt.getText());
 		Thread.sleep(1000);
-		alt.accept();				//Will click on Cancel button
+		alt.accept();				
 		
 		WebElement button3 = driver.findElement(By.id("confirmButton"));
 		js.executeScript("arguments[0].click()", button3);
 		alt = driver.switchTo().alert();
 		System.out.println(alt.getText());
 		Thread.sleep(1000);
-		alt.dismiss();
+		alt.dismiss();				//Will click on Cancel button
 		System.out.println(driver.findElement(By.id("confirmResult")).getText());
 		
 		//WebElement button4 = driver.findElement(By.id("promtButton"));
