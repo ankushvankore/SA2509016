@@ -10,33 +10,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class D37DatePicker {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://www.redbus.in/");
+		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 		
-		//From
-		/*driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[1]/div[1]/div[1]/div/div[1]")).click();
-		driver.findElement(By.id("srcDest")).sendKeys("Kolh");
-		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div/div/div")).click();
-
-		//To
-		//driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[2]/div/div/div[1]")).click();
-		driver.findElement(By.id("srcDest")).sendKeys("Ban");
-		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[2]/div[2]/div[4]/div[1]/div[1]/div/div/div")).click();
-*/
-		//Calendar
-		WebElement cal = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[3]/div[1]/i"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click()", cal);
-
-		WebElement nextArrow = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/search/div/div/div/div[1]/div[3]/div[3]/div[2]/div/div/i[2]"));
+		driver.findElement(By.id("datepicker")).click();
+		/*WebElement nextArrow = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/a[2]/span"));
 		nextArrow.click();
 		nextArrow.click();
+		*/
+		String mm = "Apr", dd = "29";
 		
-		
-		
+		By next = By.xpath("//*[@id='ui-datepicker-div']/div/a[2]/span");
+		WebElement month = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]"));
+		while(!driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]")).getText().contains(mm)) {
+		    //driver.findElement(next).click();
+			driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div/a[2]/span")).click();
+		}
+		driver.findElement(By.xpath("//a[text()=\""+dd+"\"]")).click();
 		
 	}
 
