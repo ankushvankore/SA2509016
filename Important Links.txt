@@ -1,2 +1,5 @@
 Java 17
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
+Project Discussion Link
+https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4

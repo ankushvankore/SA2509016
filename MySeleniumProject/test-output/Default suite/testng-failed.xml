@@ -5,7 +5,8 @@
     <classes>
       <class name="com.TestNGDemos.D06DataProviderDemo">
         <methods>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0 2 3 4"/>
+          <include name="logout"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>

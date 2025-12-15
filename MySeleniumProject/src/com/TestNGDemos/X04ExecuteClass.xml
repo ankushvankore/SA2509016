@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Google Tests">
+	<test name = "Execute Class">
+		<classes>
+			<class name ="com.TestNGDemos.D05GoogleAssignment">
+			</class>
+			<class name ="com.TestNGDemos.D04Before_After_Method">
+			</class>
+		</classes>
+	</test>
+</suite>

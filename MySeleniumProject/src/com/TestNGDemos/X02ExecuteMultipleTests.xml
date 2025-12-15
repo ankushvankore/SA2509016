@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Google Tests">
+	<test name = "Execute Multiple Tests">
+		<classes>
+			<class name ="com.TestNGDemos.D05GoogleAssignment">
+				<methods>
+					<include name = "clickOnAdvt"></include>
+					<include name = "clickOnImages"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
