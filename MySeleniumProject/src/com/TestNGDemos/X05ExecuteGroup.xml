@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name = "Google Tests">
 	<test name = "Execute Group">
+		
+		<classes>
+			<class name ="com.TestNGDemos.D05GoogleAssignment">
+			</class>
+		</classes>
 		<groups>
 			<run>
 				<include name = "CoreLinks"></include>
 			</run>
 		</groups>
-		<classes>
-			<class name ="com.TestNGDemos.D05GoogleAssignment">
-			</class>
-		</classes>
-		
 	</test>
 </suite>

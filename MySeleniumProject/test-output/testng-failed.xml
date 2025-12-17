@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Google Tests]">
-  <test thread-count="5" name="Execute Group(failed)">
-    <groups>
-      <run>
-        <include name="CoreLinks"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D05GoogleAssignment">
+      <class name="com.TestNGDemos.D11RediffClient">
         <methods>
-          <include name="clickOnImages"/>
-          <include name="clickOnGmail"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D05GoogleAssignment -->
+      </class> <!-- com.TestNGDemos.D11RediffClient -->
     </classes>
-  </test> <!-- Execute Group(failed) -->
-</suite> <!-- Failed suite [Google Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

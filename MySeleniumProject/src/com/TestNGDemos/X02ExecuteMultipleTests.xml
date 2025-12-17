@@ -6,6 +6,7 @@
 				<methods>
 					<include name = "clickOnAdvt"></include>
 					<include name = "clickOnImages"></include>
+					<!--  Will execute multiple test cases -->
 				</methods>
 			</class>
 		</classes>

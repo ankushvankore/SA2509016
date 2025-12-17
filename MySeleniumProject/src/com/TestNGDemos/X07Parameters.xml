@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Parameterization">
+	<test name = "Passing data to TestNG Class">
+		
+		<parameters>
+			<parameter name = "UserName" value = "student"></parameter>
+			<parameter name = "Password" value = "Password123"></parameter>		
+		</parameters>
+
+		<classes>
+			<class name ="com.TestNGDemos.D09ParameterizationLoginToPracticeTest">
+			</class>
+		</classes>
+	</test>
+</suite>

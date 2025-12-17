@@ -5,6 +5,7 @@
 			<class name ="com.TestNGDemos.D05GoogleAssignment">
 				<methods>
 					<exclude name = "clickOnImages"></exclude>
+					<!--  Will Skip single test case -->
 				</methods>
 			</class>
 		</classes>

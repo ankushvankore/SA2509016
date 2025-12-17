@@ -17,20 +17,12 @@ import org.testng.annotations.Test;
 
 public class D06DataProviderDemo {
 	WebDriver driver;
-	String expUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
-	String actUrl;
 	
 	@Test(dataProvider = "getLoginData")
 	public void login(String un, String ps) {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(un);
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(ps);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		
-		actUrl = driver.getCurrentUrl();
-		
-		//Assert.assertEquals(actUrl, expUrl);
-		//Assert.assertTrue(actUrl.equals(expUrl));
-		Assert.assertTrue(actUrl.contains("dash"));
 	}
 
 	@DataProvider

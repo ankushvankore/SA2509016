@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Google Tests" parallel = "methods" thread-count = "3">
+	<test name = "Parallel Execution">
+		<classes>
+			<class name ="com.TestNGDemos.D02TestOnlineShopingApps">
+			</class>
+		</classes>
+	</test>
+</suite>
