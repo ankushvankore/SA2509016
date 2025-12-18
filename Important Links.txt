@@ -3,3 +3,7 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
 Project Discussion Link
 https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4
+
+For Apache POI
+https://archive.apache.org/dist/poi/release/bin/
+On this link download last 4th file (poi-bin-5.2.3-20220909.zip)

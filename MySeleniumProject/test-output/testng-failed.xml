@@ -5,9 +5,11 @@
     <classes>
       <class name="com.TestNGDemos.D11RediffClient">
         <methods>
+          <include name="clearForm"/>
           <include name="beforeTest"/>
+          <include name="createUser1"/>
           <include name="afterTest"/>
-          <include name="createUser"/>
+          <include name="createUser2"/>
         </methods>
       </class> <!-- com.TestNGDemos.D11RediffClient -->
     </classes>
