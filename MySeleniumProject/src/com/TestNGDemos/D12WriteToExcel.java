@@ -16,7 +16,7 @@ import org.testng.annotations.AfterTest;
 
 public class D12WriteToExcel {
 	File file;
-	FileOutputStream fos;
+	FileOutputStream fos;	//As we are writing the data
 	XSSFWorkbook wb;
 	XSSFSheet sheet;
 	XSSFRow row;
@@ -34,8 +34,8 @@ public class D12WriteToExcel {
 	public void beforeTest() throws FileNotFoundException {
 		file = new File("MyFirstExcelFile.xlsx");
 		fos = new FileOutputStream(file);
-		wb = new XSSFWorkbook();
-		sheet = wb.createSheet("My First Sheet");
+		wb = new XSSFWorkbook();			//Will create a workbook
+		sheet = wb.createSheet("My First Sheet");		//Create a sheet 
 	}
 
 	@AfterTest
