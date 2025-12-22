@@ -7,3 +7,6 @@ https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4
 For Apache POI
 https://archive.apache.org/dist/poi/release/bin/
 On this link download last 4th file (poi-bin-5.2.3-20220909.zip)
+
+Extent Report Dependency
+https://mvnrepository.com/artifact/com.aventstack/extentreports
