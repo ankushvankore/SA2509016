@@ -14,12 +14,12 @@ import io.cucumber.java.en.*;
 public class S05TestSeleniumPage {
 	WebDriver driver;
 
-	@Before
+	//@Before
 	public void beforeHook() {
 		System.out.println("Before Hook Executed");
 	}
 
-	@After
+	//@After
 	public void closeBrowser() {
 		driver.close();
 	}

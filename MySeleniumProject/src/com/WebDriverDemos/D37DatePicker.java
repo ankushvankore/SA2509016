@@ -16,22 +16,17 @@ public class D37DatePicker {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
-		
+
 		driver.findElement(By.id("datepicker")).click();
-		/*WebElement nextArrow = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/a[2]/span"));
-		nextArrow.click();
-		nextArrow.click();
-		*/
-		String mm = "Apr", dd = "29";
+
+		String month = "Jul", day = "15";
 		
-		By next = By.xpath("//*[@id='ui-datepicker-div']/div/a[2]/span");
-		WebElement month = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]"));
-		while(!driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]")).getText().contains(mm)) {
-		    //driver.findElement(next).click();
-			driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div/a[2]/span")).click();
+		while(!driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div")).getText().contains(month))
+		{
+			driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/a[2]/span")).click();
 		}
-		driver.findElement(By.xpath("//a[text()=\""+dd+"\"]")).click();
 		
+		driver.findElement(By.xpath("//a[contains(text(), \""+day+"\")]")).click();
 	}
 
 }

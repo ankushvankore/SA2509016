@@ -967,3 +967,4 @@ Caused by: org.eclipse.core.runtime.OperationCanceledException: null
 2025-12-26 22:29:35,438 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\StarAgile\Demos\SA2509016\MyCucumberProject\src\main\resources
 2025-12-26 22:29:35,439 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2025-12-26 22:29:35,440 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2025-12-26 22:34:38,628 [Worker-10: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

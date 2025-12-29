@@ -18,6 +18,8 @@ public class S06Registration {
 	    System.out.println(data);
 	    
 	    System.out.println(data.get(0).get(0));
+	    
+	    System.out.println(data.get(1).get(3));
 	}
 
 	@Then("Registration successful")
